@@ -39,28 +39,25 @@
 
    <EditText
        android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
        android:inputType="number"
        android:id="@+id/groupEditText"
-       android:layout_column="0"
        android:digits="0123456789"
        android:maxLength="6"
        android:ems="10"
-       android:layout_columnSpan="2"/>
+       android:layout_columnSpan="2"
+       android:layout_row="1" />
 
    <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:textAppearance="?android:attr/textAppearanceMedium"
        android:id="@+id/groupTextView"
-       android:layout_row="0"
-       android:layout_column="0"
+       android:layout_width="wrap_content"
+       android:layout_row="1"
        android:layout_columnSpan="2"
-       android:hint="@string/enter_amount"
        android:layout_gravity="fill_horizontal"
        android:background="@color/amount_background"
+       android:elevation="@dimen/elevation"
+       android:hint="@string/enter_group_size"
        android:padding="@dimen/textview_padding"
-       android:elevation="@dimen/elevation"/>
+       android:textAppearance="?android:attr/textAppearanceMedium" />
 
    <TextView
       android:layout_width="wrap_content"
